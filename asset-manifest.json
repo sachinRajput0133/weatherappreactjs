@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/weatherappreactjs/static/css/main.fab05fac.css",
+    "main.js": "/weatherappreactjs/static/js/main.052ef469.js",
+    "index.html": "/weatherappreactjs/index.html",
+    "main.fab05fac.css.map": "/weatherappreactjs/static/css/main.fab05fac.css.map",
+    "main.052ef469.js.map": "/weatherappreactjs/static/js/main.052ef469.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fab05fac.css",
+    "static/js/main.052ef469.js"
+  ]
+}
