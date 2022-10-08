@@ -1,0 +1,154 @@
+.temp-container{
+    /* background-color: grey; */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.container-wrapper{
+    background:rgb(188 186 210);
+    border: 1px solid rgb(80, 73, 73);
+    height:20rem;
+  
+    /* width: 15rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    padding: 1rem 2rem;
+    border-radius: .5em;
+    box-shadow: 2px 2px 15px 2px rgba(0, 0, 0, 0.468);
+    overflow: hidden;
+}
+.weather-image >img{
+    width: 5rem;
+    max-height: 5rem;
+    object-fit: cover;
+}
+.search{
+    max-width: 8rem;
+    align-items: center;
+    align-self: center;
+}
+.search >input{
+    width: 100%;
+    padding: .2em;
+    background-color: transparent;
+    /* border-radius: .2em; */
+    border: 1px solid rgb(59, 55, 55);
+    border-radius: 2px;
+
+    
+
+}
+:focus-visible{
+    outline: 0px !important;
+}
+::placeholder{
+    color:rgb(111, 107, 107);
+    font-weight: 400;
+    font-size: .7em;
+    letter-spacing: 2px;
+    text-align: center;
+    opacity: .7;
+
+
+}
+.city-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    z-index: 10;
+
+}
+.city-name{
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 10;
+    
+    
+}
+.temp{
+    z-index: 10;
+}
+.degree{
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 5;
+}
+.font-secondary{
+    font-weight: 400;
+    /* columns: green; */
+    opacity: .5;
+    
+    
+}
+
+.wave{
+    background-color: rgba(255, 255, 255, 0.644);
+    width: 20rem;
+    height: 20rem;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    margin-left: -10rem;
+    /* margin-top: -15rem; */
+    transform-origin: 50% 48%;
+    border-radius: 43%;
+    animation: drift 3000ms infinite linear;
+    z-index: 1;
+    opacity: .5;
+
+}
+.cloud-wrapper{
+    display: flex;
+    flex-direction: column;
+    opacity: .9;
+    font-size: 8px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+ }
+
+
+/* @keyframes identifier {
+    
+} */
+/* .wave3{
+    animation: drift 5000ms infinite linear;
+    z-index: 2 !important;
+    opacity: 0.2;
+}
+.wave2{
+    animation: drift 5000ms infinite linear;
+    z-index: 2 !important;
+    opacity: 0.1;
+} */
+
+@media (max-width:600px){
+     html{
+        font-size: 1.5rem;
+      
+     }
+     .container-wrapper{
+        min-width: 320px;
+        max-width: 320px;
+     }
+     .font-secondary{
+        font-size: .5em;
+     }
+     .popup{
+        opacity: .9;
+        font-size: 20px;
+     }
+     /* .cloud-wrapper{
+        display: flex;
+        flex-direction: column;
+        opacity: .9;
+        font-size: 8px;
+        text-transform: capitalize;
+        letter-spacing: 2px;
+     } */
+}
