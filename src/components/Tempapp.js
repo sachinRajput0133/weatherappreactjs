@@ -5,22 +5,22 @@ const Tempapp = () => {
   const [input, setInput] = useState("pune");
   const [weather, setWeather] = useState('');
   const [sky, setSky] = useState("");
-  const [loading,setLoading]=useState(false)
+//   const [loading,setLoading]=useState(false)
 
   const fetchApi = async () => {
-    setLoading(true)
+    // setLoading(true)
     const data = await axios.get(
       `https://api.openweathermap.org/data/2.5/weather?q=${input}&units=metric&appid=f960c14fe804da302af90c9ae184bb25`
     );
-     console.log(data)
-    //  console.log(data.data.main.temp)
+    //  console.log(data)
+  
     //  console.log(data.data)
     setWeather(data.data.main);
     //  console.log(data.data.weather[0].main)
     setSky(data.data.weather[0].main);
-    setLoading(false)
+   
   };
-  console.log(weather);
+ 
   
   useEffect(() => {
     fetchApi();
@@ -72,7 +72,7 @@ const Tempapp = () => {
             <>
             <div className="cloud-wrapper">
             <i
-              class="fa-solid fa-cloud"
+              className="fa-solid fa-cloud"
               style={{ color: "white", fontSize: "2rem" }}
             ></i>
              <span>{sky}</span>
