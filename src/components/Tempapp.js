@@ -52,7 +52,7 @@ const Tempapp = () => {
             type="text"
             name=""
             id=""
-            placeholder="SEARCH CITY"
+            placeholder="SEARCH"
           />
         </div>
          
